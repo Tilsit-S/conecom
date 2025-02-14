@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Arial";
+    src: local("Arial-Regular"),
+        url("../fonts/Arial-400.woff") format("woff");
+    font-weight: 400;
+    font-style: regular;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: local("Arial-Bold"),
+        url("../fonts/Arial-700.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: local("Lato-Regular"),
+        url("../fonts/Lato-400.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

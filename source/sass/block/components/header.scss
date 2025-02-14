@@ -1,0 +1,49 @@
+.header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e8e8ff;
+    z-index: 3;
+
+    .container {
+        position: relative;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 20px;
+        left: 60px;
+    }
+
+    &__image {
+        img {
+            z-index: 1;
+        }
+    }
+
+    &__text-block {
+        position: absolute;
+        top: 50%;
+        left: 60px;
+        width: 550px;
+        color: $white;
+        z-index: 2;
+    }
+
+    &__title {
+        @include main-title;
+        margin: 0 0 30px 0;
+    }
+
+    &__description {
+        font-size: 26px;
+        line-height: 138%;
+    }
+}
+
+@media (max-width: $notebook-width) {
+}
+
+@media (max-width: $tablet-width) {
+}
