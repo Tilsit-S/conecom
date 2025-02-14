@@ -1,0 +1,106 @@
+.mission {
+
+    &__achieve {
+        overflow: hidden;
+        position: relative;
+        font-family: "Lato";
+        background-color: $blue;
+        color: $white;
+
+        &::after {
+            position: absolute;
+            bottom: -149px;
+            right: -6px;
+            content: "";
+            display: block;
+            background-image: url('../img/main/mission/crumbs.svg');
+            width: 437px; 
+            height: 323px;
+            background-repeat: no-repeat;
+        }
+
+        p {
+            position: relative;
+            font-size: 24px;
+            line-height: 133%;
+            width: 676px;
+            padding: 97px 0 92px 0;
+            margin: 0 0 0 145px;
+
+            &::before {
+                position: absolute;
+                top: 96px;
+                left: -85px;
+                content: "";
+                display: block;
+                background-image: url('../img/main/mission/arrow.svg');
+                width: 47px; 
+                height: 60px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 437px;
+        background-image: url('../img/main/mission/mission.png');
+        color: $white;
+        text-align: center;
+    }
+
+    &__link-title {
+        position: relative;
+        font-family: "Lato";
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 167%;
+        text-transform: uppercase;
+        padding: 84px 0 0 0;
+        margin: 0 0 35px 0;
+
+        &::before {
+            position: absolute;
+            top: 117px;
+            left: -87px;
+            content: "";
+            display: block;
+            width: 66px;
+            height: 4px;
+            background-color: $white;
+        }
+
+        &::after {
+            position: absolute;
+            top: 117px;
+            right: -87px;
+            content: "";
+            display: block;
+            width: 66px;
+            height: 4px;
+            background-color: $white;
+        }
+    }
+
+    &__link-description {
+        font-size: 24px;
+        line-height: 117%;
+        text-transform: uppercase;
+        margin: 0 0 40px 0;
+    }
+
+    &__visit-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 283px;
+        padding: 20px 5px;
+        font-size: 18px;
+        line-height: 156%;
+        color: $blue;
+        background: $white;
+    }
+}

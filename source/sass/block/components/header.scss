@@ -1,44 +1,103 @@
 .header {
     overflow: hidden;
-    position: fixed;
     top: 0;
     width: 100%;
-    background-color: #e8e8ff;
     z-index: 3;
+    margin: 0 0 97px 0;
 
     .container {
+        padding-top: 15px;
+    }
+
+    &__intro {
         position: relative;
+        background-image: url('../img/header/main.png');
+        background-size: 100% 600px;
+        height: 600px;
+        margin: 0 0 99px 0;
     }
 
     &__logo {
-        position: absolute;
-        top: 20px;
-        left: 60px;
+        margin: 0 0 113px 60px;
     }
 
     &__image {
+        
         img {
             z-index: 1;
         }
     }
 
     &__text-block {
-        position: absolute;
-        top: 50%;
-        left: 60px;
         width: 550px;
+        margin: 0 0 0 60px;
         color: $white;
         z-index: 2;
     }
 
     &__title {
         @include main-title;
-        margin: 0 0 30px 0;
+        font-weight: 400;
+        margin: 0 0 15px 0;
     }
 
     &__description {
         font-size: 26px;
         line-height: 138%;
+    }
+
+    &__crumbs {
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+    }
+
+    &__present {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        padding: 0 40px;
+    }
+
+    &__present-video {
+        position: relative;
+        width: 545px;
+        height: 367px;
+        margin: 37px 41px 0 20px;
+        box-shadow: -35px -37px 0px 0px #f7eee5;
+    }
+
+    &__present-text {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 545px;
+    }
+
+    &__present-number {
+        margin: 0 0 18px 0;
+    }
+
+    &__present-number-description {
+        font-family: "Lato";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 167%;
+        text-transform: uppercase;
+        color: $blue;
+        margin: 0 0 30px 0;
+    }
+
+    &__present-description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: #6c5f4a;
+
+        p {
+            &:first-child {
+                margin: 0 0 16px 0;
+            }
+        }
     }
 }
 
