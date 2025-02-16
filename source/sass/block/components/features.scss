@@ -1,3 +1,214 @@
 .features {
-    
+    overflow: hidden;
+
+    .container {
+        padding: 30px 60px 60px 60px;
+        background: #f7eee5;
+    }
+
+    &__title {
+        @include second-title;
+        padding: 69px 0 0 0;
+        margin: 0 0 60px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        gap: 32px 31px;
+
+        @media (max-width: 1246px) {
+            gap: 25px;
+        }
+
+        
+        @media (max-width: 1029px) {
+            gap: 10px;
+        }
+            
+    }
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-flow: column;
+        width: 31.5%;
+        height: 317px;
+        background: $blue;
+        box-shadow: 0px -30px 0px -5px $blue inset;
+        z-index: 3;
+    }
+
+    &__item-image {
+        @include image-wrapper;
+    }
+
+    &__item-info {
+        position: absolute;
+        bottom: -273px;
+        left: 0;
+        width: 100%;
+        height: 130%;
+        color: $white;
+        background: $blue;
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transform: translate(0, -290px);
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+            cursor: auto;
+        }
+    }
+
+    &__item-info:hover ~ .features__item-icon {
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__item-link {
+        display: flex;
+        flex-flow: column nowrap;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 122%;
+        padding: 21px 20px 60px 20px;
+        color: $white;
+
+        textarea {
+            resize: none;
+            background: $blue;
+            color: $white;
+            border: none;
+            white-space:wrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+
+        p {
+            min-height: 90px;
+            margin: 0 0 50px 0;
+
+            &:nth-child(1) {
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+
+    &__item-icon {
+        position: absolute;
+        bottom: 26px;
+        right: 19px;
+        z-index: 4;
+        transition: all 0.3s ease-in-out;
+    }
+
+
+    /* slider */
+    &__slider {
+        display: none;
+    }
+
+
+    .slider {
+        position: relative;
+    }
+
+    .slick-slider{
+        position: relative;
+        height: 100%;
+        margin: 0;
+    }
+
+    /* Слайдер запущен */
+    .slick-slider.slick-initialized{}
+
+    /* Слайдер с точками */
+    .slick-slider.slick-dotted{}
+
+    .slick-arrow {
+        position: absolute;
+        top: 196px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        z-index: 1;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .slick-prev.slick-arrow {
+        top: -85px;
+        right: 60px;
+        background-image: url("../img/main/variety/arrow.svg");
+        background-position: center;
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+    }
+
+    .slick-next.slick-arrow {
+        top: -84px;
+        right: 0;
+        background-image: url("../img/main/variety/arrow.svg");
+        background-position: center;
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+    }
+
+    /* dots */
+    .slick-dots {
+        display: none;
+        
+    }
+
+    .slick-dots li button {}
+
+    .slick-dots .slick-active button {}
+
+    /* Ограничивающая оболочка */
+    .slick-list {
+        overflow: visible;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    /* Лента слайдов */
+    .slick-track{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 90px;
+    }
+
+    /* Слайд */
+    .slick-slide{
+        overflow: hidden;
+        //position: relative;
+        //overflow: hidden;
+        //display: flex;
+        //flex-flow: column;
+        //width: 31.5%;
+        //height: 317px;
+        //background: $blue;
+        //box-shadow: 0px -30px 0px -5px $blue inset;
+        //z-index: 3;
+        height: auto;
+
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
+        
+        img {
+            width: 100%;
+        }
+    }
+    /* slider-end */
 }

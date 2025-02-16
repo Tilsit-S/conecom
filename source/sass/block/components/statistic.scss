@@ -1,0 +1,58 @@
+.statistic {
+    overflow: hidden;
+
+    &__wrapper {
+        background: #f7eee5;
+        padding: 0 60px
+    }
+
+    .container {
+    }
+
+    &__title {
+        @include second-title;
+        text-transform: uppercase;
+        margin: 0 0 60px 0;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        color: #6c5f4a;
+        margin: 0 0 60px 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        &:first-child {
+
+            
+        }
+    }
+
+    &__item:first-child {
+        .statistic__groupe-item {
+            background-color: #6c5f4a;
+
+            .statistic__groupe-item:first-child {
+
+                &__item-description {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+
+            }
+        }
+    }
+}
