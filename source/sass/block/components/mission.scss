@@ -14,7 +14,7 @@
             content: "";
             display: block;
             background-image: url('../img/main/mission/crumbs.svg');
-            width: 437px; 
+            width: 437px;
             height: 323px;
             background-repeat: no-repeat;
         }
@@ -34,7 +34,7 @@
                 content: "";
                 display: block;
                 background-image: url('../img/main/mission/arrow.svg');
-                width: 47px; 
+                width: 47px;
                 height: 60px;
                 background-repeat: no-repeat;
             }
@@ -102,5 +102,13 @@
         line-height: 156%;
         color: $blue;
         background: $white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: $blue;
+            color: $white;
+            transition: all 0.3s ease-in-out;
+            opacity: 1;
+        }
     }
 }
