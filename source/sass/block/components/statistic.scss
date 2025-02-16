@@ -12,7 +12,8 @@
     &__title {
         @include second-title;
         text-transform: uppercase;
-        margin: 0 0 60px 0;
+        margin: 0 0 20px 0;
+        padding: 65px 0 0 0;
     }
 
     &__description {
@@ -29,30 +30,88 @@
     }
 
     &__item {
-        position: relative;
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-start;
 
-        &:first-child {
-
-            
+        &:nth-child(2) {
+            margin-left: auto;
         }
     }
 
+    &__item-image {
+        @include image-wrapper;
+    }
+
     &__item:first-child {
-        .statistic__groupe-item {
-            background-color: #6c5f4a;
+        
+        .statistic__groupe-item:first-child {
+            position: relative;
 
-            .statistic__groupe-item:first-child {
-
-                &__item-description {
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                }
-
+            p {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: inline-flex;
+                justify-content: flex-end;
+                width: 100%;
+                font-size: 18px;
+                line-height: 122%;
+                padding: 17px 40px 15px 10px;
+                color: $white;
+                background: #8a7b60;
             }
         }
+
+        .statistic__groupe-item:nth-child(2) {
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+
+            p {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: inline-flex;
+                width: 100%;
+                font-size: 18px;
+                line-height: 122%;
+                padding: 17px 30px 15px 40px;
+                color: $white;
+                background: $blue;
+            }
+        }
+    }
+
+    &__item:nth-child(2) {
+
+        .statistic__groupe-item {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            //padding: 20px;
+            background: $blue;
+            color: $white;
+        }
+
+        .statistic__groupe-item:nth-child(2) {
+            position: relative;
+            p {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: inline-flex;
+                //justify-content: flex-end;
+                width: 100%;
+                font-size: 18px;
+                line-height: 122%;
+                padding: 17px 15px 15px 40px;
+                color: $white;
+                background: #8a7b60;
+            }
+        }
+
+        
     }
 }
