@@ -4,28 +4,15 @@ $(document).ready(function(){
         dots: true,
         variableWidth: true,
         adaptiveHeight: true,
-        infinite: true,
+        infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1250,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
-            {
-                breakpoint: 960,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 621,
+                breakpoint: 641,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToScroll: 2,
                 },
             },
         ],

@@ -113,3 +113,68 @@
         }
     }
 }
+
+@media (max-width: $notebook-width) {
+
+    .mission {
+    
+        &__achieve {
+    
+            &::after {
+            }
+    
+            p {
+                margin: 0 0 0 125px;
+    
+                &::before {
+                }
+            }
+        }
+    
+        &__link {
+            height: 460px;
+            background-size: auto 100%;
+        }
+    
+        &__link-title {
+            padding: 87px 0 0 0;
+            margin: 0 0 28px 0;
+    
+            &::before {
+                top: 121px;
+            }
+    
+            &::after {
+                top: 121px;
+            }
+        }
+    
+        &__link-description {
+            width: 590px;
+            font-size: 24px;
+            line-height: 133%;
+            margin: 0 0 32px 0;
+        }
+    
+        &__visit-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 283px;
+            padding: 20px 5px;
+            font-size: 18px;
+            line-height: 156%;
+            color: $blue;
+            background: $white;
+            transition: all 0.3s ease-in-out;
+    
+            &:hover {
+                background: $blue;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+                opacity: 1;
+            }
+        }
+    }
+}
