@@ -44,7 +44,7 @@
     }
 
     &__item:first-child {
-        
+
         .statistic__groupe-item:first-child {
             position: relative;
 
@@ -102,7 +102,6 @@
                 right: 0;
                 bottom: 0;
                 display: inline-flex;
-                //justify-content: flex-end;
                 width: 100%;
                 font-size: 18px;
                 line-height: 122%;
@@ -111,7 +110,34 @@
                 background: #8a7b60;
             }
         }
+    }
 
-        
+    &__item:nth-child(3) {
+
+        .statistic__groupe-item {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background: $blue;
+            color: $white;
+        }
+
+        .statistic__groupe-item:nth-child(3) {
+            position: relative;
+
+            p {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                display: inline-flex;
+                width: 100%;
+                font-size: 18px;
+                line-height: 122%;
+                padding: 17px 15px 15px 40px;
+                color: $white;
+                background: #8a7b60;
+            }
+        }
     }
 }
