@@ -15,7 +15,7 @@
         background-size: 100% 600px;
         height: 600px;
         margin: 0 0 99px 0;
-            
+
         @media (max-width: 1200px) {
             background-size: auto;
             background-position: 50%;
@@ -27,7 +27,7 @@
     }
 
     &__image {
-        
+
         img {
             z-index: 1;
         }
@@ -113,51 +113,51 @@
 @media (max-width: $notebook-width) {
     .header {
         margin: 0 0 75px 0;
-    
+
         .container {
             padding-top: 15px;
         }
-    
+
         &__intro {
             position: relative;
             background-image: url('../img/header/main.png');
             height: 600px;
             margin: 0 0 79px 0;
         }
-    
+
         &__logo {
             margin: 0 0 133px 60px;
         }
-    
+
         &__image {
-            
+
             img {
                 z-index: 1;
             }
         }
-    
+
         &__text-block {
             margin: 0 0 0 40px;
             z-index: 2;
         }
-    
+
         &__title {
             margin: 0 0 27px 0;
         }
-    
+
         &__description {
             font-size: 26px;
             line-height: 138%;
         }
-    
+
         &__crumbs {
             display: none;
         }
-    
+
         &__present {
             padding: 0 15px;
         }
-    
+
         &__present-video {
             width: 405px;
             height: 271px;
@@ -169,21 +169,21 @@
                 height: 271px;
             }
         }
-    
+
         &__present-text {
             width: 417px;
         }
-    
+
         &__present-number {
             margin: 0 0 18px 0;
         }
-    
+
         &__present-number-description {
             margin: 0 0 30px 0;
         }
-    
+
         &__present-description {
-    
+
             p {
                 &:first-child {
                     margin: 0 0 16px 0;
@@ -200,11 +200,11 @@
         &__wrapper {
             margin: 0 5px;
         }
-    
+
         .container {
             padding-top: 15px;
         }
-    
+
         &__intro {
             display: flex;
             flex-flow: column nowrap;
@@ -215,7 +215,7 @@
             height: 314px;
             margin: 0 0 60px 0;
         }
-    
+
         &__logo {
             width: 167px;
             height: 65px;
@@ -227,42 +227,42 @@
                 height: 100%;
             }
         }
-    
+
         &__image {
-            
+
             img {
                 z-index: 1;
             }
         }
-    
+
         &__text-block {
             margin: 0;
             z-index: 2;
         }
-    
+
         &__title {
             font-weight: 400;
             font-size: 36px;
             line-height: 111%;
             margin: 0 0 21px 0;
         }
-    
+
         &__description {
             width: 350px;
             margin: 0 auto;
             font-size: 16px;
             line-height: 125%;
         }
-    
+
         &__crumbs {
             display: none;
         }
-    
+
         &__present {
             flex-flow: column-reverse nowrap;
             padding: 0 15px;
         }
-    
+
         &__present-video {
             width: 94%;
             height: 358px;
@@ -274,11 +274,11 @@
                 height: 358px;
             }
         }
-    
+
         &__present-text {
             width: 100%;
         }
-    
+
         &__present-number {
             width: 71px;
             height: 31px;
@@ -289,13 +289,13 @@
                 height: 100%;
             }
         }
-    
+
         &__present-number-description {
             font-size: 9px;
             line-height: normal;
             margin: 0 0 17px 0;
         }
-    
+
         &__present-description {
             font-size: 14px;
             line-height: 143%;
@@ -305,7 +305,115 @@
             br {
                 display: inline-block;
             }
-    
+
+            p {
+                &:first-child {
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header {
+        margin: 0 0 59px 0;
+
+        &__wrapper {
+            margin: 0;
+        }
+
+        .container {
+            padding-top: 15px;
+        }
+
+        &__intro {
+            background-size: auto 352px;
+            background-repeat: no-repeat;
+            height: 352px;
+            margin: 0 0 60px 0;
+        }
+
+        &__logo {
+            width: 167px;
+            height: 65px;
+            margin: 0 auto;
+            margin-bottom: 54px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__image {
+
+            img {
+                z-index: 1;
+            }
+        }
+
+        &__text-block {
+            margin: 0;
+            z-index: 2;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 100%;
+            margin: 0 0 21px 0;
+        }
+
+        &__description {
+            width: 233px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+
+        &__present {
+            flex-flow: column-reverse nowrap;
+            padding: 0 15px;
+        }
+
+        &__present-video {
+            width: 94%;
+            height: 358px;
+            margin: 59px 27px 0 25px;
+            box-shadow: -25px -46px 0 0 #f7eee5;
+
+            iframe {
+                width: 100%;
+                height: 358px;
+            }
+        }
+
+        &__present-text {
+            width: 100%;
+        }
+
+        &__present-number {
+            width: 71px;
+            height: 31px;
+            margin: 0 0 11px 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__present-number-description {
+            margin: 0 0 17px 0;
+        }
+
+        &__present-description {
+            padding: 0 10px 0 0;
+            margin: 0 0 17px 0;
+
+            br {
+                display: inline-block;
+            }
+
             p {
                 &:first-child {
                     margin: 0 0 10px 0;

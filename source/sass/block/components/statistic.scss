@@ -419,10 +419,10 @@
         }
 
         &__slider {
+            overflow: hidden;
             display: flex;
             width: 93%;
             margin: 0 15px;
-            overflow: hidden;
         }
 
         .slide {
