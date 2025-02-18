@@ -12,7 +12,14 @@ $(document).ready(function(){
                 breakpoint: 641,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 321,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 },
             },
         ],

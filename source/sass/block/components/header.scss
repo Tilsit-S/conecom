@@ -16,7 +16,7 @@
         height: 600px;
         margin: 0 0 99px 0;
 
-        @media (max-width: 1200px) {
+        @media (max-width: 1249px) {
             background-size: auto;
             background-position: 50%;
         }
@@ -70,6 +70,9 @@
         height: 367px;
         margin: 37px 41px 0 20px;
         box-shadow: -35px -37px 0px 0px #f7eee5;
+
+        
+        background: aqua;
     }
 
     &__present-text {
@@ -198,7 +201,7 @@
         margin: 0 0 59px 0;
 
         &__wrapper {
-            margin: 0 5px;
+            margin: 0;
         }
 
         .container {
@@ -260,7 +263,7 @@
 
         &__present {
             flex-flow: column-reverse nowrap;
-            padding: 0 15px;
+            padding: 0 19px;
         }
 
         &__present-video {
@@ -317,7 +320,7 @@
 
 @media (max-width: $mobile-width) {
     .header {
-        margin: 0 0 59px 0;
+        margin: 0 0 50px 0;
 
         &__wrapper {
             margin: 0;
@@ -331,7 +334,7 @@
             background-size: auto 352px;
             background-repeat: no-repeat;
             height: 352px;
-            margin: 0 0 60px 0;
+            margin: 0 0 50px 0;
         }
 
         &__logo {
@@ -377,13 +380,13 @@
 
         &__present-video {
             width: 94%;
-            height: 358px;
-            margin: 59px 27px 0 25px;
-            box-shadow: -25px -46px 0 0 #f7eee5;
+            height: 174px;
+            margin: 31px 27px 0 3px;
+            box-shadow: -8px -20px 0 0 #f7eee5;
 
             iframe {
                 width: 100%;
-                height: 358px;
+                height: 174px;
             }
         }
 
@@ -394,7 +397,7 @@
         &__present-number {
             width: 71px;
             height: 31px;
-            margin: 0 0 11px 0;
+            margin: 0 0 15px 0;
 
             img {
                 width: 100%;
@@ -403,11 +406,11 @@
         }
 
         &__present-number-description {
-            margin: 0 0 17px 0;
+            margin: 0 0 25px 0;
         }
 
         &__present-description {
-            padding: 0 10px 0 0;
+            padding: 0;
             margin: 0 0 17px 0;
 
             br {

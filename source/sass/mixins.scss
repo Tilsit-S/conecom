@@ -1,7 +1,7 @@
 @mixin breakpoint {
     width: $desktop-width;
     margin: 0 auto;
-    //padding: 0 15px;
+    padding: 0;
 
     @media (max-width: 1249px) {
         width: 100%;
@@ -10,16 +10,19 @@
 
     @media (max-width: $notebook-width) {
         width: 100%;
+        margin: 0 auto;
         padding: 0 15px;
     }
 
     @media (max-width: $tablet-width) {
         width: 100%;
+        margin: 0 auto;
         padding: 0 15px;
     }
 
     @media (max-width: $mobile-width) {
         width: 100%;
+        margin: 0 auto;
         padding: 0 15px;
     }
 }
