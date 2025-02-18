@@ -22,11 +22,11 @@
             gap: 25px;
         }
 
-        
+
         @media (max-width: 1029px) {
             gap: 10px;
         }
-            
+
     }
 
     &__item {
@@ -116,43 +116,43 @@
 @media (max-width: $notebook-width) {
 
     .features {
-    
+
         .container {
             padding: 30px 55px 60px 55px;
         }
-    
+
         &__title {
             padding: 50px 0 0 0;
             margin: 0 0 32px 0;
         }
-    
+
         &__list {
             flex-flow: row wrap;
             gap: 20px 36px;
-                
+
         }
-    
+
         &__item {
             width: 30.5%;
             height: 343px;
             z-index: 3;
         }
-    
+
         &__item-image {
             @include image-wrapper;
         }
-    
+
         &__item-info {
             bottom: -281px;
-    
+
             &:hover {
                 transform: translate(0, -340px);
             }
         }
-    
+
         &__item-info:hover ~ .features__item-icon {
         }
-    
+
         &__item-link {
             display: flex;
             flex-flow: column nowrap;
@@ -161,7 +161,7 @@
             line-height: 122%;
             padding: 21px 20px 60px 20px;
             color: $white;
-    
+
             textarea {
                 resize: none;
                 background: $blue;
@@ -171,24 +171,24 @@
                 overflow:hidden;
                 text-overflow:ellipsis;
             }
-    
+
             p {
                 min-height: 90px;
                 margin: 0 0 50px 0;
-    
+
                 &:nth-child(1) {
                     margin: 0 0 80px 0;
                 }
             }
         }
-    
+
         &__item-icon {
             position: absolute;
             bottom: 26px;
             right: 19px;
         }
-    
-    
+
+
         /* slider */
         &__slider {
             display: none;
@@ -200,31 +200,29 @@
     .features {
 
         &__wrapper {
-            //width: 610px;
-            //margin: 0 15px;
         }
-    
+
         .container {
             margin: 0 15px;
             padding: 30px 20px 60px 20px;
         }
-    
+
         &__title {
             padding: 50px 0 0 0;
             margin: 0 0 32px 0;
         }
-    
+
         &__list {
             display: none;
-                
+
         }
-    
+
         &__item {
             width: 30.5%;
             height: 343px;
             z-index: 3;
         }
-    
+
         &__item-image {
 
             img {
@@ -232,18 +230,18 @@
                 height: 170px;
             }
         }
-    
+
         &__item-info {
             bottom: -255px;
-    
+
             &:hover {
                 transform: translate(0, -340px);
             }
         }
-    
+
         &__item-info:hover ~ .features__item-icon {
         }
-    
+
         &__item-link {
             display: flex;
             flex-flow: column nowrap;
@@ -252,7 +250,7 @@
             line-height: 122%;
             padding: 21px 20px 60px 20px;
             color: $white;
-    
+
             textarea {
                 resize: none;
                 background: $blue;
@@ -262,24 +260,24 @@
                 overflow:hidden;
                 text-overflow:ellipsis;
             }
-    
+
             p {
                 min-height: 90px;
                 margin: 0 0 50px 0;
-    
+
                 &:nth-child(1) {
                     margin: 0 0 80px 0;
                 }
             }
         }
-    
+
         &__item-icon {
             position: absolute;
             bottom: 26px;
             right: 19px;
         }
-    
-    
+
+
         /* slider */
         &__slider {
             position: relative;
@@ -297,60 +295,52 @@
         .slider {
             position: relative;
         }
-    
+
         .slick-slider{
             position: relative;
             height: 100%;
             margin: 0;
             z-index: 2;
         }
-    
+
         /* Слайдер запущен */
         .slick-slider.slick-initialized{}
-    
+
         /* Слайдер с точками */
         .slick-slider.slick-dotted{}
-    
+
         .slick-arrow {
             position: absolute;
             top: 100px;
+            content: '';
             display: flex;
             flex-shrink: 0;
             justify-content: center;
             align-items: center;
-            width: 50px;
-            height: 50px;
+            background-position: center;
+            background-color: transparent;
+            background-repeat: no-repeat;
             font-size: 0;
-            z-index: 1;
+            z-index: 3;
             border: none;
             background-color: transparent;
         }
-    
+
         .slick-prev.slick-arrow {
-            position: absolute;
             left: 0;
             background-image: url('../img/main/features/arrow.svg');
             width: 10px;
             height: 8px;
-            background-position: center;
-            background-color: transparent;
-            background-repeat: no-repeat;
-            z-index: 3;
         }
-    
+
         .slick-next.slick-arrow {
-            position: absolute;
             right: 0;
             background-image: url('../img/main/features/arrow.svg');
             width: 10px;
             height: 8px;
-            background-position: center;
-            background-color: transparent;
-            background-repeat: no-repeat;
             transform: rotate(180deg);
-            z-index: 3;
         }
-    
+
         /* dots */
         .slick-dots {
             position: absolute;
@@ -361,9 +351,9 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             width: 64px;
-            
+
         }
-    
+
         .slick-dots li button {
             display: block;
             width: 4px;
@@ -374,18 +364,18 @@
             border: none;
             border-radius: 50%;
         }
-    
+
         .slick-dots .slick-active button {
             background: #0a3b93;
         }
-    
+
         /* Ограничивающая оболочка */
         .slick-list {
             overflow: visible;
             margin: 0 auto;
             margin-bottom: 70px;
         }
-    
+
         /* Лента слайдов */
         .slick-track{
             display: flex;
@@ -393,11 +383,11 @@
             align-items: flex-start;
             margin-bottom: 90px;
         }
-    
+
         /* Слайд */
         .slick-slide{
             overflow: hidden;
-    
+
             &:not(:first-child) {
                 margin-left: 25px;
             }
