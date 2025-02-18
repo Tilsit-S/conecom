@@ -1,6 +1,10 @@
 .features {
     overflow: hidden;
 
+    &__wrapper {
+        background: #f7eee5;
+    }
+
     .container {
         padding: 30px 60px 60px 60px;
         background: #f7eee5;
@@ -208,8 +212,10 @@
         }
 
         &__title {
+            font-size: 20px;
+            line-height: 160%;
             padding: 50px 0 0 0;
-            margin: 0 0 32px 0;
+            margin: 0 0 20px 0;
         }
 
         &__list {

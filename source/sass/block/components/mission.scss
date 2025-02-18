@@ -185,6 +185,12 @@
         &__achieve {
 
             &::after {
+                top: 0;
+                right: 0;
+                width: 220px;
+                height: 100%;
+                background-size: 100% 100%;
+                z-index: 1;
             }
 
             p {
@@ -193,49 +199,54 @@
                 line-height: 125%;
                 margin: 0 ;
                 padding: 60px 90px;
+                z-index: 2;
 
                 &::before {
+                    top: 50px;
+                    left: 15px;
                 }
             }
         }
 
         &__link {
-            height: 460px;
+            height: 275px;
             background-size: auto 100%;
         }
 
         &__link-title {
-            padding: 87px 0 0 0;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 153%;
+            padding: 40px 0 0 0;
             margin: 0 0 28px 0;
 
             &::before {
-                top: 121px;
+                width: 15px;
+                height: 2px;
+                top: 60px;
+                left: -25px;
             }
 
             &::after {
-                top: 121px;
+                width: 15px;
+                height: 2px;
+                top: 60px;
+                right: -25px;
             }
         }
 
         &__link-description {
-            width: 590px;
-            font-size: 24px;
-            line-height: 133%;
+            width: 428px;
+            font-size: 16px;
+            line-height: 125%;
             margin: 0 0 32px 0;
         }
 
         &__visit-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 283px;
-            padding: 20px 5px;
-            font-size: 18px;
-            line-height: 156%;
-            color: $blue;
-            background: $white;
-            transition: all 0.3s ease-in-out;
+            width: 171px;
+            padding: 10px 5px;
+            font-size: 14px;
+            line-height: 200%;
 
             &:hover {
                 background: $blue;
