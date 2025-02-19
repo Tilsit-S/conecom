@@ -5,9 +5,13 @@
     }
     
     .container {
-        width: 97.5%;
-        padding: 0 43px;
+        padding: 0 60px;
         background: #f7eee5;
+
+        @media (max-width: 1250px) {
+            width: 97.5%;
+            padding: 0 43px;
+        }
     }
 
     &__title {
